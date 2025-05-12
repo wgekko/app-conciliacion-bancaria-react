@@ -1,0 +1,22 @@
+{
+  "short_name": "App Conciliacion Bancaria",
+  "name": "Create React App Conciliacion",
+  "icons": [
+    {
+      "src": "trato.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "public": "trato.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+
+
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

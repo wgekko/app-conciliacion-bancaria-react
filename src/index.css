@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+            /* Establece un degradado de azul oscuro a azul marino como fondo */
+            background: linear-gradient(to bottom, #003366, #000046); /* Azul oscuro a azul marino */
+            color: #FF8C00; /* Texto blanco para contraste */
+            font-family: 'Inter', sans-serif; /* Fuente moderna y legible */
+            margin: 0; /* Elimina el margen predeterminado del body */
+            display: flex; /* Utiliza Flexbox para centrar contenido */
+            flex-direction: column; /* Apila los elementos verticalmente */
+            min-height: 100vh; /* Asegura que el body ocupe al menos el 100% del viewport alto */
+            overflow-x: hidden;  /* Evita la barra de desplazamiento horizontal */
+}
+
+.container {
+            /* Contenedor principal para el contenido de la página */
+            max-width: 1200px; /* Ancho máximo del contenido */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            padding: 20px; /* Espacio interno alrededor del contenido */
+            text-align: center; /* Centra el texto dentro del contenedor */
+            flex: 1; /* Permite que el contenedor crezca y ocupe el espacio restante */
+            display: flex; /* Utiliza Flexbox para centrar los elementos internos */
+            flex-direction: column;
+            justify-content: center; /* Centra el contenido verticalmente en el contenedor */
+            align-items: center; /* Centra el contenido horizontalmente en el contenedor */
+            margin-bottom: 50px; /* Ajusta este valor para cambiar el espacio */
+}
+
+h1 {
+            /* Estilos para el encabezado principal */
+            color: #FFA500; /* Naranja */
+            font-size: 2.5em; /* Tamaño de fuente grande para el título */
+            margin-bottom: 20px; /* Espacio debajo del título */
+            font-weight: 600; /* Hace el texto más grueso */
+}
+
+p {
+            /* Estilos para los párrafos de texto */
+            font-size: 1.1em; /* Tamaño de fuente ligeramente más grande para el cuerpo del texto */
+            line-height: 1.7; /* Espacio entre líneas para mejorar la legibilidad */
+            margin-bottom: 20px; /* Espacio debajo de los párrafos */
+            color: #FFA500;
+}
+
+.button{
+            /* Estilos para los botones */
+            background-color: #FFA500 !important; /* Naranja */
+            color: #194aec !important; /* Texto blanco */
+            padding: 12px 25px !important; /* Relleno vertical y horizontal */
+            border: none !important; /* Sin borde */
+            border-radius: 5px !important; /* Bordes redondeados */
+            font-size: 1.1em !important; /* Tamaño de fuente del botón */
+            cursor: pointer !important; /* Cambia el cursor al pasar por encima */
+            transition: background-color 0.3s ease !important; /* Transición suave del color de fondo */
+            margin-top: 10px !important;
+            display: inline-block !important; /* Asegura que el botón se comporte como un elemento en línea con bloque */
+}
+
+.button:hover {
+            /* Estilos para cuando el cursor pasa por encima del botón */
+            background-color: #FF8C00 !important; /* Naranja más oscuro al pasar el cursor */
+}
+
+
+.button-download{
+            /* Estilos para los botones */
+            background-color: #FFA500 !important; /* Naranja */
+            color: #194aec !important; /* Texto blanco */
+            padding: 12px 25px !important; /* Relleno vertical y horizontal */
+            border: none !important; /* Sin borde */
+            border-radius: 5px !important; /* Bordes redondeados */
+            font-size: 1.1em !important; /* Tamaño de fuente del botón */
+            cursor: pointer !important; /* Cambia el cursor al pasar por encima */
+            transition: background-color 0.3s ease !important; /* Transición suave del color de fondo */
+            margin-top: 10px !important;
+            display: inline-block !important; /* Asegura que el botón se comporte como un elemento en línea con bloque */
+}
+
+.button-download:hover {
+            /* Estilos para cuando el cursor pasa por encima del botón */
+            background-color: #FF8C00 !important; /* Naranja más oscuro al pasar el cursor */
+}
+
+
+
+footer {
+            /* Estilos para el pie de página */
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+            color:  #FF8C00; /* Texto blanco */
+            padding: 15px; /* Espacio interno */
+            text-align: center; /* Centra el texto del pie de página */
+            font-size: 0.9em; /* Tamaño de fuente más pequeño */
+            margin-top: 50px;
+}
+
+        /* Estilos para pantallas más pequeñas (móviles) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px; /* Reduce el relleno en pantallas pequeñas */
+            }
+            h1 {
+                font-size: 2em; /* Reduce el tamaño del título en móviles */
+            }
+            p {
+                font-size: 1em; /* Reduce el tamaño del texto en móviles */
+                line-height: 1.5;
+            }
+            .button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+            footer {
+                font-size: 0.8em;
+            }
+        }
