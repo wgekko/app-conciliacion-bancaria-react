@@ -373,7 +373,7 @@ function App() {
           </p>
           <div className='space-y-1'>
             <div className="bg-gray-800 text-gray-100 max-w-2xl h-40 p-4 rounded-md border border-gray-600 overflow-auto whitespace-pre-line font-sans leading-relaxed mx-auto text-sm">
-              IMPORTANTE: En cada archivo, en la fila y columna 1 - debe tener los siguientes titulos:<br/>
+              IMPORTANTE: En cada archivo, en la fila 1 y columna A - debe tener los siguientes titulos:<br/>
               Fecha, Detalle o Descripción, Débito o Débitos, Crédito o Créditos y Saldo.<br/>
               para poder generar una correcta comparación entre los datos de los archivos.<br/>
             </div>  
